@@ -10,5 +10,11 @@
 }
 
 .card{
-    margin: 25px;
+    margin: 33px;
+    background-color: rgb(0, 0, 0);
+    
+}
+
+.movie-image{
+    width: 500px;
 }
