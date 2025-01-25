@@ -5,3 +5,10 @@ Body{
     color: white;
 }
 
+footer{
+    background-color: rgb(0, 0, 0);
+    height: 80px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}

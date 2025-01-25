@@ -28,7 +28,7 @@ function MoviesList() {
             <h1 className={styles.title}>Lista dei Film</h1>
             <div className={styles.container}>
                 {movies.map((movie) => (
-                    <div key={movie.id} className={styles.card} style={{ width: '18rem', border: '1px solid #ddd', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', overflow: 'hidden' }}>
+                    <div key={movie.id} className={styles.card} style={{ width: '18rem', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', overflow: 'hidden' }}>
                         <img src={`/${movie.image}`} alt={movie.title} className="movie-image" style={{ width: '100%', height: '350px' }} />
                         <div className="card-body" style={{ padding: '1rem' }}>
                             <h5 className="card-title" style={{ fontSize: '1.25rem', marginBottom: '10px' }}>{movie.title}</h5>

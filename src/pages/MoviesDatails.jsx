@@ -32,14 +32,14 @@ function MovieDetail() {
     return (
         <div className="container py-5">
             <h1 className="text-center mb-4">{movie.title}</h1>
-            <div className="row">
-                <div className="col-md-6 d-flex justify-content-center bg-dark">
-                    <img src={`/${movie.image}`} alt={movie.title} className="movie-image" style={{ width: 'auto', height: '500px' }} />
+            <div className="row ">
+                <div className="col-md-6 d-flex justify-content-center">
+                    <img  className="movie-image rounded-lg" src={`/${movie.image}`} alt={movie.title} style={{ width: 'auto', height: '500px' }} />
                 </div>
                 <div className="col-md-6">
-                    <h3 className='mt-5'>Recensione :</h3>
+                    <h3 className='mt-5'>Recensione Film :</h3>
                     <p>{movie.abstract}</p>
-                    <h3 className="mt-4 mb-4">Recensioni:</h3>
+                    <h3 className="mt-4 mb-4">Recensioni Utenti :</h3>
                     <div className="list-group">
                         {movie.reviews.length > 0 ? (
                             movie.reviews.map((review) => (
