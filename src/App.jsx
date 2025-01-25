@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import DefaultLayout from './pages/DefoultLayout';
 import './App.css'
+import MoviesList from './pages/Movies/Movies';
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<DefaultLayout />}>
+            <Route index element={<MoviesList />} />
           </Route>
         </Routes>
       </BrowserRouter>

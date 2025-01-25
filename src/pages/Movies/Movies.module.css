@@ -1,0 +1,14 @@
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin: 25px;
+}
