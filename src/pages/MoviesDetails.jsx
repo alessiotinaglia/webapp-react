@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-
+import FormReviews from './FormReviews';
 function MovieDetail() {
     const { id } = useParams();
     const [movie, setMovie] = useState(null);
@@ -34,12 +34,12 @@ function MovieDetail() {
             <h1 className="text-center mb-4">{movie.title}</h1>
             <div className="row ">
                 <div className="col-md-6 d-flex justify-content-center">
-                    <img  className="movie-image rounded-lg" src={`/${movie.image}`} alt={movie.title} style={{ width: 'auto', height: '500px' }} />
+                    <img className="movie-image rounded-lg" src={`/${movie.image}`} alt={movie.title} style={{ width: 'auto', height: '500px' }} />
                 </div>
                 <div className="col-md-6">
-                    <h3 className='mt-5'>Recensione Film :</h3>
+                    <h3 style={{ color: 'black' }}><strong>Recensione Film :</strong></h3>
                     <p>{movie.abstract}</p>
-                    <h3 className="mt-4 mb-4">Recensioni Utenti :</h3>
+                    <h3 className="mt-4 mb-4"style={{ color: 'black' }}><strong>Recensione Utenti :</strong></h3>
                     <div className="list-group">
                         {movie.reviews.length > 0 ? (
                             movie.reviews.map((review) => (
@@ -54,6 +54,11 @@ function MovieDetail() {
                             <p>Non ci sono recensioni per questo film.</p>
                         )}
                     </div>
+                </div>
+            </div>
+            <div>
+                <div className='m-5'>
+                    <FormReviews />
                 </div>
             </div>
         </div>

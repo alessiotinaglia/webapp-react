@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import DefaultLayout from './pages/DefoultLayout';
 import './App.css'
 import MoviesList from './pages/Movies/Movies';
-import MovieDetail from './pages/MoviesDatails';
+import MovieDetail from './pages/MoviesDetails';
 
 
 function App() {

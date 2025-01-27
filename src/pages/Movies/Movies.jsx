@@ -20,7 +20,11 @@ function MoviesList() {
     }, []);
 
     if (loading) {
-        return <div>Caricamento...</div>;
+        return (
+            <div className="d-flex justify-content-center" >
+                <h2 style={{ marginTop: '335px', fontSize: '5em', color: "black"}}>Caricamento...</h2>
+            </div>
+        );
     }
 
     return (
@@ -34,7 +38,7 @@ function MoviesList() {
                             <h5 className="card-title" style={{ fontSize: '1.25rem', marginBottom: '10px' }}>{movie.title}</h5>
                             <p className="card-text" style={{ fontSize: '1rem', color: '#666' }}>{movie.description}</p>
                         </div>
-                        <NavLink className='btn btn-primary m-3' to={`/${movie.id}`}>Dettagli e recensioni </NavLink>
+                        <NavLink className='btn btn-primary m-3' to={`/${movie.id}`}>Dettagli e Recensioni </NavLink>
                     </div>
                 ))}
             </div>
