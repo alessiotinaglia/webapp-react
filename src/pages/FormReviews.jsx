@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
+
 function ReviewForm({ fetchMovie }) {
     const { id } = useParams();
     const [name, setName] = useState('');
@@ -31,6 +32,9 @@ function ReviewForm({ fetchMovie }) {
 
     return (
         <form onSubmit={handleSubmit}>
+            <div className='d-flex justify-content-center' style={{color: 'black'}}>
+                <h2><strong>Aggiungi la tua recensione</strong></h2>
+            </div>
             <div className="mb-3">
                 <label htmlFor="name" className="form-label my-2" style={{ color: 'black' }}> <strong>Nome</strong></label>
                 <input
